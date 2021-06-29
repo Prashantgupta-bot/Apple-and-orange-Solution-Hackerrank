@@ -1,0 +1,29 @@
+s,t=map(int,input().split())
+a,b=map(int,input().split())
+m,n=map(int,input().split())
+apples=[int(m) for m in input().split(" ")]
+oranges=[int(n) for n in input().split(" ")]
+la=[]
+lo=[]
+sa=0
+so=0
+for i in range(len(apples)):
+    c=a+apples[i]
+    la.append(c)
+   
+        
+for j in range(len(oranges)):
+    d=b+oranges[j]
+    lo.append(d)
+for k in range(len(apples)):
+    if la[k] in range(s,t+1):
+        sa=sa+1
+for j in range(len(oranges)):
+    if lo[j] in range(s,t+1):
+        so=so+1
+
+print(la,lo)
+print(sa,so)
+
+    
+
